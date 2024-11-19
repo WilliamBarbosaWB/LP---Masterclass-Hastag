@@ -250,3 +250,75 @@ li {
    
 }
 
+
+/*-----------------------------------------*/
+/*SEÇÃO SOBRE*/
+
+.h3-quem {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.secao--quem{
+    background-image: url(./assets/660d9e60b52c66db2e67e0b4_[BACKGROUND]\ -\ BANNER\ 01\ -\ WJS1.webp);
+    background-size: cover;
+    background-position: 100%;
+    padding-bottom: 0;
+
+}
+
+.card--quem {
+    max-width: 60%;
+    width: 100%;
+    margin-bottom: 70px;
+    padding-top: 30px;
+}
+
+.daniel-quem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(80px, 0);
+    max-width: 475px;
+}
+
+.container--quem{
+    position: relative;
+}
+
+/*-----------------------------------------*/
+/*footer*/
+
+.footer{
+    padding: 40px;
+    box-shadow: 0 -5px 20px 0 #00a2ff8f;
+    z-index: 1;
+    position: relative;
+}
+
+.footer__container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer__links{
+    display: flex;
+    gap: 10px;
+}
+
+.footer img{
+    max-width: 45px;
+}
+
+.footer a{
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
