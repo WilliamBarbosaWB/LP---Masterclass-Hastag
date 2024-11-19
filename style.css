@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron&display=swap');
+
+/*GERAL*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h1{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+h1 .marterclass{
+    color: #00a2ffe3;
+}
+
+h1 .programacao {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h1 .fullstack {
+    font-size: 55px;
+    font-weight: 400;
+}
+
+button {
+    background-color: #00a2ffe3;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 100px;
+    margin: 0 auto;
+    padding: 15px 60px;
+    border: 3px solid #02507ee3;
+    border-right-width:5px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    border-right-width:4px;
+    border-bottom-width: 4px;
+    border-top-width:4px;
+    border-left-width: 4px;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.realce {
+    color: #00a2ffe3;
+}
+
+
+/*SECAO HERO*/
+.secao{
+    padding: 70px 20px;
+}
+
+
+.secao--hero{
+    background-image: url(./assets/660d9e60b52c66db2e67e0b4_[BACKGROUND]\ -\ BANNER\ 01\ -\ WJS1.webp);
+    background-position: 50%;
+    background-size: cover; /*preencher todo o espaço da imagem*/
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1100px; /*largura máxima do container*/
+    margin: 0 auto; /*macete para centralizar o conteudo do container*/
+    align-items: flex-end;
+}
+
+.container--coluna {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hexagono{
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 25px;
+    background-color: #050505;
+    padding:30px 40px;
+    box-shadow: 0 0 25px 5px #00a2ffe3;
+    border: none;
+    border-radius: 20px;
+    max-width: 50%; /*comando para delimitar que esse elemento vai ocupar metade da seção*/
+    font-size: 19px;
+}
+
+.subtitulo, .data, button{
+    font-size: 23px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: start;
+    gap: 7.5px;
+
+    img {
+        margin-top: 2.5px;
+    }
+}
+
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 0 5px 1px #00a2ffe3;
+    border-radius: 100px;
+    padding: 5px 30px;
+    margin: 0 auto;
+}
+
+
+
+.daniel {
+    max-width: 510px;
+
+}
+
+/*-----------------------------------------*/
+/*SEÇÃO DISCLAIMER*/
+
+.secao--disclaimer{
+    margin-top: -40px;
+    background-color: #151515;
+    padding: 60px 20px;
+    box-shadow: 0 12px 15px 0 #00000032;
+    
+
+}
+
+.disclaimer{
+    font-size: 15px;
+    color: #7c7f7f;
+}
+
+
+/*-----------------------------------------*/
+/*SEÇÃO passos*/
+
+.passo__cabecalho{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    min-width: 200px;
+}
+
+.passos {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passo {
+    display: flex;
+    gap: 30px;
+    background-color: #1c1c1c;
+    padding: 20px 30px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.passo__icone{
+    max-width: 53px;
+    background-color: #141213;
+    border-radius: 7.5px;
+    padding: 12px;
+    box-shadow: 0 0 4px 1px #00a2ffef, inset 0 0 2.5px #22a4efef;
+    border: 3px solid #262427;
+}
+
+.passo__barra{
+    width: 4px;
+    background-color: #333;
+    align-self: stretch;
+    
+}
+
+/*-----------------------------------------*/
+/*SEÇÃO APRENDER*/
+
+.secao--aprender {
+    background-color: #000618;
+}
+
+.temas {
+    align-self: stretch;
+    font-size: 18px;
+}
+
+.tema{
+    position: relative;
+    background-color: #050505;
+    border-radius: 10px;
+    padding: 25px 60px;
+    box-shadow: 0 0 4px 1px #00a2ffef;
+}
+
