@@ -65,6 +65,7 @@ button:hover{
 h2 {
     font-size: 42px;
     font-weight: 400;
+    text-align: center;
 }
 
 h3 {
@@ -84,6 +85,7 @@ img{
 /*SECAO HERO*/
 .secao{
     padding: 70px 20px;
+    overflow: hidden;
 }
 
 
@@ -240,6 +242,7 @@ li {
     font-size: 18px;
     text-align: center;
     max-width: 768px;
+    margin-left: 30px;
 }
 
 .tema{
@@ -322,3 +325,228 @@ li {
 .footer a:hover{
     text-decoration: underline;
 }
+
+.popup{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.756);
+    backdrop-filter: blur(5px);
+}
+
+.popup__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+input{
+    padding: 10px 15px;
+    border-radius: 100px;
+    border: 2px solid #0068a5;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    color: white;
+
+}
+
+.popup__botao--fechar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10%, -70%);
+    padding: 10px;
+    aspect-ratio: 1 / 1;
+
+    height: 54px;
+}
+
+.popup--aberto .popup{
+    display: flex;
+}
+
+
+
+/*-----------------------------------------*/
+/*RESPONSIVIDADE*/
+
+@media (max-width:1020px) {
+    h1{
+        font-size: 42px;
+    }
+
+    h1.programacao{
+        font-size: 46px;
+    }
+
+    h1.fullstack {
+        font-size: 48px;
+    }
+
+    .card{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container--coluna{
+        gap: 40px;
+    }
+
+    .card--quem{
+        margin-bottom: 0;
+    }
+
+    .daniel--quem{
+        position: static;
+        transform: none;
+    }
+
+    .disclaimer {
+        text-align: center;
+    }
+
+    .secao--disclaimer{
+        padding: 30px;
+    }
+}
+
+@media (max-width: 770px){
+    
+    
+    .passos .temas {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .passo__barra{
+        height: 2px;
+        width: 100%;
+    }
+
+    .passo{
+        flex-direction: column;
+    }
+
+    .temas {
+        margin-left: 0;
+        gap: 40px;
+        align-self:stretch ;
+    }
+
+    .daniel{
+        max-width: 350px;
+        display: none;
+    }
+
+    .daniel-quem img{
+        max-width: 150px;
+        display: none;
+        position: static;
+    }
+
+
+}
+
+/* Ajuste para telas menores que 536px */
+@media (max-width: 536px) {
+    .card {
+      flex: 1 1 100%; /* Ocupa 100% da largura disponível */
+      max-width: 100%; /* Garante que o card não ultrapasse a largura */
+      padding: 20px; /* Aumenta o espaço interno para visibilidade */
+      font-size: 16px; /* Aumenta o tamanho do texto para facilitar a leitura */
+    }
+  
+    .card h3 {
+      font-size: 18px; /* Ajusta o tamanho do título */
+    }
+  
+    .card p {
+      font-size: 14px; /* Ajusta o tamanho do parágrafo */
+      line-height: 1.5; /* Melhora o espaçamento entre linhas */
+    }
+  
+    .card-container {
+      padding: 8px; /* Adiciona margem para não colar na borda da tela */
+    }
+  }
+
+  /* Ajuste para dispositivos abaixo de 480px */
+@media (max-width: 480px) {
+    .card {
+      padding: 15px; /* Reduz o espaçamento interno */
+      font-size: 14px; /* Ajusta o tamanho do texto geral */
+    }
+  
+    .card h3 {
+      font-size: 16px; /* Reduz o tamanho do título */
+      line-height: 1.4; /* Melhora a leitura com espaçamento entre linhas */
+      margin-bottom: 10px; /* Espaço entre o título e o texto */
+    }
+  
+    .card p {
+      font-size: 12px; /* Ajusta o texto do parágrafo */
+      line-height: 1.6; /* Dá mais respiro entre as linhas */
+      margin-bottom: 8px; /* Espaço entre parágrafos */
+    }
+  
+    .card-container {
+      margin: 10px; /* Adiciona espaço ao redor do container */
+    }
+  
+    /* Centraliza os textos e ajusta o layout */
+    .card {
+      text-align: center; /* Centraliza o conteúdo do card */
+    }
+
+    h1{
+        line-height: 100%;
+    }
+
+    h1 span.programacao {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    h1 span.fullstack{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    h1 span.master{
+        font-size: 36px;
+    }
+
+    p.subtitulo{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    ul li{
+        text-align: start;
+        
+    }
+
+    .data{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data p {
+        font-size: 16px;
+    }
+  }
+  
